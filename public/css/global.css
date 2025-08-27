@@ -1,0 +1,87 @@
+:root {
+  --cor-primaria: #1e1e1e; /* Fundo escuro estilo Copilot */
+  --cor-secundaria: #39ff14; /* Buttons e detaques*/
+  --cor-terciaria: #1f8d0b; /* Hover neon*/
+  --cor-quaternaria: #ffffff; /* Texto branco */
+  --cor-quintenaria: #505050; /*Texto cinza*/
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: var(--cor-primaria);
+  color: var(--cor-terciaria);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: var(--cor-quaternaria);
+}
+
+p,
+label {
+  line-height: 1.6;
+  color: var(--cor-quintenaria);
+}
+
+a {
+  padding: 15px 5px;
+  font-size: 10px;
+  color: var(--cor-quintenaria);
+  text-decoration: none;
+}
+
+span {
+  color: var(--cor-secundaria);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header {
+  background: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  background: var(--cor-primaria);
+  color: var(--cor-terciaria);
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}

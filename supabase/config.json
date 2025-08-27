@@ -1,0 +1,14 @@
+{
+  "projectName": "Meu Workspace",
+  "version": "1.0.0",
+  "description": "Este é um projeto de exemplo com integração entre HTML, CSS e JavaScript.",
+  "author": "Seu Nome",
+  "license": "MIT",
+  "settings": {
+    "theme": "default",
+    "language": "pt-BR"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

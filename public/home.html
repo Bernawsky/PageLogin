@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+  header("Location: login.html");
+  exit;
+}
+?>
+
+    <h1>Bem-vindo,
+        <?php echo $_SESSION['usuario']['username']; ?>!
+    </h1>
+
+    <a href="../auth/logout.php">Sair</a>
+    <form action="../auth/logout.php" method="post">
+        <button type="submit">Sair</button>
+    </form>
+</body>
+
+</html>
